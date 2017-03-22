@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "FIDTextLayoutView.h"
 @interface ViewController ()
 
 @end
@@ -16,13 +16,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor whiteColor];
+    FIDTextLayoutView *layoutView = [[FIDTextLayoutView alloc]init];
+    layoutView.placeholderColor = [UIColor colorWithRed:102/255.0 green:102/255.0 blue:102/255.0 alpha:1];
+    layoutView.highLightColor = [UIColor colorWithRed:23/255.0 green:158/255.0 blue:158/255.0 alpha:1];
+    [self.view addSubview:layoutView];
+    __weak UIView *superView = self.view;
+    layoutView.titleLabel.text = @"用户名";
+    [layoutView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.mas_equalTo(superView.mas_centerX);
+        make.centerY.mas_equalTo(superView.mas_centerY);
+        make.width.mas_equalTo(200);
+    }];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+        [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
+}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];    
 }
 
 

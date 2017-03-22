@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D61B4C94AF4D1E0A898047C /* libPods-FIDTextLayoutView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 379AD24252246FE531B4BA56 /* libPods-FIDTextLayoutView.a */; };
 		9A32CA631E8173760097324D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A32CA621E8173760097324D /* main.m */; };
 		9A32CA661E8173760097324D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A32CA651E8173760097324D /* AppDelegate.m */; };
 		9A32CA691E8173760097324D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A32CA681E8173760097324D /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		9A32CA711E8173760097324D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A32CA6F1E8173760097324D /* LaunchScreen.storyboard */; };
 		9A32CA7C1E8173760097324D /* FIDTextLayoutViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A32CA7B1E8173760097324D /* FIDTextLayoutViewTests.m */; };
 		9A32CA871E8173760097324D /* FIDTextLayoutViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A32CA861E8173760097324D /* FIDTextLayoutViewUITests.m */; };
+		9A32CA961E8173F90097324D /* FIDTextLayoutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A32CA951E8173F90097324D /* FIDTextLayoutView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		379AD24252246FE531B4BA56 /* libPods-FIDTextLayoutView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FIDTextLayoutView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6272AC2669D7897060A7BB8A /* Pods-FIDTextLayoutView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIDTextLayoutView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FIDTextLayoutView/Pods-FIDTextLayoutView.debug.xcconfig"; sourceTree = "<group>"; };
 		9A32CA5E1E8173760097324D /* FIDTextLayoutView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FIDTextLayoutView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A32CA621E8173760097324D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9A32CA641E8173760097324D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +55,9 @@
 		9A32CA821E8173760097324D /* FIDTextLayoutViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FIDTextLayoutViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A32CA861E8173760097324D /* FIDTextLayoutViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FIDTextLayoutViewUITests.m; sourceTree = "<group>"; };
 		9A32CA881E8173760097324D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A32CA941E8173F90097324D /* FIDTextLayoutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FIDTextLayoutView.h; sourceTree = "<group>"; };
+		9A32CA951E8173F90097324D /* FIDTextLayoutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FIDTextLayoutView.m; sourceTree = "<group>"; };
+		E8A9C2EADCA939DD9A332C79 /* Pods-FIDTextLayoutView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FIDTextLayoutView.release.xcconfig"; path = "Pods/Target Support Files/Pods-FIDTextLayoutView/Pods-FIDTextLayoutView.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D61B4C94AF4D1E0A898047C /* libPods-FIDTextLayoutView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		544ACBEFB71201F09EFF037A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6272AC2669D7897060A7BB8A /* Pods-FIDTextLayoutView.debug.xcconfig */,
+				E8A9C2EADCA939DD9A332C79 /* Pods-FIDTextLayoutView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		571CB25ECC4A82C93F14CF40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				379AD24252246FE531B4BA56 /* libPods-FIDTextLayoutView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9A32CA551E8173760097324D = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +110,8 @@
 				9A32CA7A1E8173760097324D /* FIDTextLayoutViewTests */,
 				9A32CA851E8173760097324D /* FIDTextLayoutViewUITests */,
 				9A32CA5F1E8173760097324D /* Products */,
+				544ACBEFB71201F09EFF037A /* Pods */,
+				571CB25ECC4A82C93F14CF40 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +132,8 @@
 				9A32CA651E8173760097324D /* AppDelegate.m */,
 				9A32CA671E8173760097324D /* ViewController.h */,
 				9A32CA681E8173760097324D /* ViewController.m */,
+				9A32CA941E8173F90097324D /* FIDTextLayoutView.h */,
+				9A32CA951E8173F90097324D /* FIDTextLayoutView.m */,
 				9A32CA6A1E8173760097324D /* Main.storyboard */,
 				9A32CA6D1E8173760097324D /* Assets.xcassets */,
 				9A32CA6F1E8173760097324D /* LaunchScreen.storyboard */,
@@ -147,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A32CA8B1E8173760097324D /* Build configuration list for PBXNativeTarget "FIDTextLayoutView" */;
 			buildPhases = (
+				36192C6F595FEC5D09295F53 /* [CP] Check Pods Manifest.lock */,
 				9A32CA5A1E8173760097324D /* Sources */,
 				9A32CA5B1E8173760097324D /* Frameworks */,
 				9A32CA5C1E8173760097324D /* Resources */,
+				48EA65FD911B87E35F9C1994 /* [CP] Embed Pods Frameworks */,
+				D714923B3A470A56D13F57D9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -271,6 +303,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		36192C6F595FEC5D09295F53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		48EA65FD911B87E35F9C1994 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FIDTextLayoutView/Pods-FIDTextLayoutView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D714923B3A470A56D13F57D9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FIDTextLayoutView/Pods-FIDTextLayoutView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9A32CA5A1E8173760097324D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -279,6 +359,7 @@
 				9A32CA691E8173760097324D /* ViewController.m in Sources */,
 				9A32CA661E8173760097324D /* AppDelegate.m in Sources */,
 				9A32CA631E8173760097324D /* main.m in Sources */,
+				9A32CA961E8173F90097324D /* FIDTextLayoutView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +504,7 @@
 		};
 		9A32CA8C1E8173760097324D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6272AC2669D7897060A7BB8A /* Pods-FIDTextLayoutView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J3BJ7G2PUN;
@@ -435,6 +517,7 @@
 		};
 		9A32CA8D1E8173760097324D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8A9C2EADCA939DD9A332C79 /* Pods-FIDTextLayoutView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J3BJ7G2PUN;
@@ -514,6 +597,7 @@
 				9A32CA8D1E8173760097324D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A32CA8E1E8173760097324D /* Build configuration list for PBXNativeTarget "FIDTextLayoutViewTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +606,7 @@
 				9A32CA901E8173760097324D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A32CA911E8173760097324D /* Build configuration list for PBXNativeTarget "FIDTextLayoutViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +615,7 @@
 				9A32CA931E8173760097324D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
